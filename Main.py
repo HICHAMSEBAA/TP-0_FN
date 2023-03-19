@@ -76,7 +76,7 @@ plt.xlabel('Angle (radians)')
 plt.ylabel('Amplitude')
 plt.title('Trigonometric Functions')
 plt.legend()
-plt.show()
+#plt.show()
 
 # Create a scatter plot with custom markers and colors
 x = np.random.normal(size=100)
@@ -102,4 +102,14 @@ plt.plot(x, q, 'g--', label='cosine')
 plt.xlabel('Angle (radians)')
 plt.ylabel('Amplitude')
 plt.legend()
-#plt.show()
+plt.show()
+
+
+
+# Create a stem plot of the data
+x = np.array([1, 2, 3, 2, 1, 0, 1, 2, 3, 4, 3, 2, 1])
+plt.stem(x)
+plt.xlabel('Sample')
+plt.ylabel('Amplitude')
+plt.title('Stem Plot')
+plt.show()
