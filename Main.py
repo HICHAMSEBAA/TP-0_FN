@@ -59,6 +59,9 @@ Xph_c = np.unwrap(np.angle(X_shifted))
 # Moving up from frequency space to time space (spatial), is achieved by applying the reverse Fourier transform
 x = np.fft.ifft(X)
 
+# Create a new figure with ID 1
+plt.figure(1)
+
 # To plot a signal
 
 plt.plot(t, p)
@@ -104,6 +107,8 @@ plt.ylabel('Amplitude')
 plt.legend()
 plt.show()
 
+# Create a new figure with ID 1
+plt.figure(2)
 
 
 # Create a stem plot of the data
